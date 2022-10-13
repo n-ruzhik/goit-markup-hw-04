@@ -6,6 +6,7 @@
     --hero-text-color: #fff;
     --bgc-secondary-color: #f5f4fa;
     --bgc-temporary-color: #2f303a;
+    --icon-main-color: #afb1b8;
     --portfolio-item-gap: 30px;
 }
 
@@ -277,6 +278,17 @@ img {
     padding-bottom: 0;
 }
 
+.feature-img {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--bgc-secondary-color);
+    border-radius: 4px;
+}
+
 /* Work section */
 
 .work {
@@ -303,7 +315,8 @@ img {
 }
 
 .team-box p {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 .team {
@@ -337,6 +350,70 @@ img {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+/* Socials */
+
+.social-list {
+   width: 270px;
+   justify-content: center;
+   gap: 10px;
+}
+
+.social-icon {
+    fill: var(--icon-main-color);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--hero-text-color);
+    border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus {
+    fill: var(--hero-text-color);
+}
+
+/* Clients */
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-item{
+    width: calc(100% / 6 - 30px);
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 92px;
+    border: 1px solid var(--icon-main-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.clients-link:hover .social-icon,
+.clients-link:focus {
+    fill: var(--accent-color);
 }
 
 /* portfolio page */
