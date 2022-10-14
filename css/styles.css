@@ -137,9 +137,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
+       
     color: inherit;
 
     font-weight: 500;
