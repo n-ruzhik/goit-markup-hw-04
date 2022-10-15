@@ -377,7 +377,8 @@ img {
    gap: 10px;
 }
 
-.social-icon {
+.social-icon,
+.clients-icon {
     fill: var(--icon-main-color);
 }
 
@@ -428,8 +429,8 @@ img {
     border: 1px solid var(--accent-color);
 }
 
-.clients-link:hover .social-icon,
-.clients-link:focus {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
     fill: var(--accent-color);
 }
 
